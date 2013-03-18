@@ -1,0 +1,18 @@
+@import 'bootstrap';
+
+body{
+	padding-top: 60px;
+}
+
+.hero-unit {
+	/*background-image: image-url('background_home_1.jpg');*/
+	background-color: black;
+	color: white;
+}
+.nav li a:hover{
+    color: black !important;
+}
+
+.nav li.active a{
+  color: blue;
+ }

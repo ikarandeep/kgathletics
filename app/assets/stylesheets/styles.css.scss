@@ -1,18 +1,133 @@
+/*navbar customization*/
+/*blue: 084d86*/;
+$blue: #084d86;
+$lightBlue: #82c2f8;
+
+
+
+
 @import 'bootstrap';
 
+
+
 body{
-	padding-top: 60px;
+	padding-top: 40px;
 }
+
+
+
+.navbar{
+margin:0px 0px 0px 0px;
+font-family: 'Ubuntu', sans-serif;
+}
+
+
+.navbar-inner{
+border-radius:0px;
+background: $blue !important; 
+filter: none !important;
+border-top:5px solid white !important;
+border-bottom:5px solid white !important;
+border-left:0px !important;
+border-right:0px !important;
+}
+
+.navbar .btn{
+background: $lightBlue !important;  
+padding:4px 10px;
+}
+
+.navbar .btn:hover{
+background: $blue !important;
+}
+
+.navbar .caret{
+border-top-color:#fff !important;
+border-bottom-color:#fff !important;
+}
+
+.navbar .nav{
+border-left:0px solid $lightBlue;
+border-right:0px solid $lightBlue;
+}
+
+.navbar .nav > li > a{
+padding:12px 15px 12px;
+color: white !important;
+letter-spacing: 0px;
+font-size: 14px;
+text-transform: lowercase;
+/*text-shadow: none !important;*/
+/*text-shadow: .2px .2px 1px black !important;*/
+border-right: 0px solid $lightBlue;
+border-left:0px solid $lightBlue;
+-webkit-transition:background .2s ease;
+-moz-transition:background .2s ease;
+-o-transition:background .2s ease;
+transition:background .2s ease;
+}
+
+.navbar .nav > li > a:hover{
+background: $lightBlue !important;
+color: white !important;
+-webkit-transition:background .2s ease;
+-moz-transition:background .2s ease;
+-o-transition:background .2s ease;
+transition:background .2s ease;
+}
+
+.navbar .nav .active > a,
+.navbar .nav .active > a:hover,
+.navbar .nav .active > a:focus {
+color: white;
+box-shadow:none;
+background: $lightBlue !important;
+}
+
+
+
+.nav-collapse a{
+font-weight:normal !important;
+text-shadow:none !important;
+}
+
+
+
 
 .hero-unit {
-	/*background-image: image-url('background_home_1.jpg');*/
-	background-color: black;
+	background: none;
 	color: white;
+	height: 300px;
+
 }
-.nav li a:hover{
-    color: black !important;
+#home{
+	background: black image-url('background_home_3.jpg') no-repeat fixed;
+	background-size: cover;
+	margin-top: 0px;
+	margin-top: 25px;
+	height: 700px;
 }
 
-.nav li.active a{
-  color: blue;
- }
+#about{
+	/*background: black image-url('home_background.jpg') no-repeat fixed;*/
+	background-color: $lightBlue;
+	padding-top: 40px;
+
+}
+#programs{
+	/*background: black image-url('home_background.jpg') no-repeat fixed;*/
+	background-color: $blue;
+	padding-top: 40px;
+
+}
+
+#resources{
+	/*background: black image-url('home_background.jpg') no-repeat fixed;*/
+	background-color: $lightBlue;
+	padding-top: 40px;
+}
+
+#contact{
+	/*background: black image-url('home_background.jpg') no-repeat fixed;*/
+	background-color: $blue;
+}

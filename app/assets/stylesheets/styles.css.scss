@@ -7,7 +7,6 @@ $lightBlue: #82c2f8;
 
 
 @import 'bootstrap';
-@import 'bootstrap-responsive';
 
 
 
@@ -123,65 +122,82 @@ text-shadow:none !important;
 
 #about {
   /*background: black image-url('home_background.jpg') no-repeat fixed;*/
-  background-color: #82c2f8;
-  padding-top: 40px;
+  background-color: $blue;
+padding-top: 50px;
   color: white;
 }
 
-/* line 128, ../../app/assets/stylesheets/styles.css.scss */
 #about h1 {
   color: white;
   font-size: 50px;
-  background-color: #084d86;
   height: 40px;
-  padding: 20px;
   letter-spacing: -4px;
+  padding-bottom: 10px;
+  border-bottom: 5px solid white;
 }
 
-/* line 137, ../../app/assets/stylesheets/styles.css.scss */
 #about h2 {
   font-size: 40px;
   margin-left: 100px;
-  width: 400px;
+  display: inline-block;
   padding: 10px;
   background-color: white;
-  color: #084d86;
+  color: $blue;
 }
 
-/* line 142, ../../app/assets/stylesheets/styles.css.scss */
 #about p {
-  padding-left: 100px;
+  margin-left: 150px;
+  padding-bottom: 10px;
+  font-size: 26px;
+  width: 700px;
+  line-height: 40px;
+  font-weight: bolder;
 }
 
-#about h3{
-  padding-left: 100px;
-}
-#about ul{
-  padding-left: 100px;
+#about h3 {
+  margin-left: 150px;
+  font-size: 35px;
 }
 
-#about li{
+#about ul {
+  margin-left: 150px;
+  width: 700px;
+  margin-top: -20px;
+}
+
+#about li {
   list-style-type: none;
+  font-size: 26px;
+  line-height: 40px;
+  padding: 5px;
+  letter-spacing: .1px;
+  display: inline-block;
+
 }
+
+#about li:hover {
+  background-color: $lightBlue;
+}
+
 #about ul li:before {
- content: "\0BB \020";
- }
+  content: "\0BB \020";
+}
 
 
 #programs{
 	/*background: black image-url('home_background.jpg') no-repeat fixed;*/
-	background-color: $blue;
-	padding-top: 40px;
+	background-color: $lightBlue;
+	padding-top: 50px;
 	color: white;
 }
 
 #programs h1 {
   color: white;
   font-size: 50px;
-  background-color: #084d86;
   height: 40px;
-  padding: 20px;
   letter-spacing: -4px;
+  padding-bottom: 10px;
+  border-bottom: 5px solid white;
 }
 
 #programs h2 {
@@ -190,27 +206,46 @@ text-shadow:none !important;
   display: inline-block;
   padding: 10px;
   background-color: white;
-  color: #084d86;
+  color: $lightBlue;
 }
 
 #programs p {
-  padding-left: 100px;
+  margin-left: 150px;
+  padding-bottom: 10px;
+  font-size: 26px;
+  width: 700px;
+  line-height: 40px;
+  font-weight: bolder;
 }
 
-#programs h3{
-  padding-left: 100px;
-}
-#about ul{
-  padding-left: 100px;
+#programs h3 {
+  margin-left: 150px;
+  font-size: 35px;
 }
 
-#programs li{
+#programs ul {
+  margin-left: 150px;
+  width: 700px;
+  margin-top: -20px;
+}
+
+#programs li {
   list-style-type: none;
-}
-#programs ul li:before {
- content: "\0BB \020";
- }
+  font-size: 26px;
+  line-height: 40px;
+  padding: 5px;
+  letter-spacing: .1px;
+  display: inline-block;
 
+}
+
+#programs li:hover {
+  background-color: #084d86;
+}
+
+#programs ul li:before {
+  content: "\0BB \020";
+}
 
 
 
@@ -218,11 +253,13 @@ text-shadow:none !important;
 
 #resources{
 	/*background: black image-url('home_background.jpg') no-repeat fixed;*/
-	background-color: $lightBlue;
-	padding-top: 40px;
+	background-color: white;
+	padding-top: 50px;
 }
 
 #contact{
 	/*background: black image-url('home_background.jpg') no-repeat fixed;*/
 	background-color: $blue;
+	padding-top: 50px;
+
 }

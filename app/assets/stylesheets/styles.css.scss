@@ -363,3 +363,37 @@ text-shadow:none !important;
     /*margin: -15% 0 0 -25%;*/
     margin-left: 0;
 }
+
+#center_2{
+	background: black image-url('background_home_6.jpg') no-repeat fixed;
+	background-color: $blue;
+	height: 800px;
+	background-size: cover;
+	position: relative;
+
+}
+
+#center_2 .hero-unit {
+	background-color: rgba(255, 255, 255, .5);
+	color: $blue;
+	display: inline-block;
+	position: absolute;
+    top: 30%;
+    left: 0%;
+    right: 0%;
+    height: 20%;
+    /*margin: -15% 0 0 -25%;*/
+    margin-left: 0;
+}
+
+#footer {
+  background-color: #084d86;
+  color: white;
+  font-size: 14px;
+}
+
+
+#footer h3{
+  border-bottom: 2px solid white;
+  padding-bottom: 0px;
+}

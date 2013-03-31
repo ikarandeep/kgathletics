@@ -11,6 +11,7 @@
 <link href='http://fonts.googleapis.com/css?family=Oleo+Script|Gochi+Hand' rel='stylesheet' type='text/css'> 
 <script type="text/javascript">
   	$('#navbar').scrollspy()
+
 	
 	$(document).ready(function(){
 		$('a[href^="#"]').bind('click.smoothscroll',function (e) {
@@ -24,10 +25,18 @@
 		    });
 		});
 	});
-
-
  </script>
-
+<script>
+$(document).ready(function() {
+				$('#slideshow').cycle({
+				fx: 'fade',
+				pager: '#smallnav', 
+				pause:   1, 
+				speed: 1800,
+				timeout:  3500 
+			});			
+		});
+</script>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="100">
 	<%= render 'layouts/header' %>
